@@ -4,7 +4,13 @@
 // const rmbToDollar = require('./currency');
 
 // 对象解构赋值
-const {rmbToDollar,dollarToRmb} = require('./currency');
+const {rmbToDollar,dollarToRmb} = require('./Currency');
+
+
+// 引入第三方模块
+const _ = require('underscore');
+
+
 
 // 使用模块方法
 // console.log(currency.rmbToDollar(6))
@@ -15,3 +21,13 @@ const {rmbToDollar,dollarToRmb} = require('./currency');
 
 console.log(rmbToDollar(6))
 console.log(dollarToRmb(6))
+
+
+const users = [
+    {name:'tom',age:20},
+    {name:'tom',age:19},
+]
+// const user = _.max(users, user => user.age);
+const user = _.max(users, aa => aa.age);
+
+console.log(user)
