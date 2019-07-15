@@ -15,3 +15,6 @@ package.json  scirpt属性添加 'dev' : 'webpack-dev-server'
 
 // 热更新
 npm install html-webpack-plugin -D
+
+// 添加兼容css ----这里不知道哪里配置出了问题，没有生效
+npm install postcss-loader autoprefixer --save

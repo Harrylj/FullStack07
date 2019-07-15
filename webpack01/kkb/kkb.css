@@ -1,8 +1,18 @@
 div{
     color: green;
 }
+p{
+    transform: scale(2)
+}
 div {
-  background-color: 'red';
+  background-color: #ccc;
   font-size: 20px;
+}
+.content {
+  transform: scale(2);
+}
+.content p {
+  font-size: 15px;
+  text-align: center;
 }
 
