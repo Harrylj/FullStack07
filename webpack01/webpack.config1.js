@@ -4,8 +4,8 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtract = require('mini-css-extract-plugin')
-const px2rem = require('postcss-px2rem')
-// const px2rem = require('postcss-plugin-px2rem')
+
+
 module.exports = {
     mode: 'development',
     entry: './src/index.js',
@@ -22,7 +22,6 @@ module.exports = {
         new MiniCssExtract({
             filename: 'kkb.css'
         })
-
     ],
     module: {
         rules: [
@@ -30,7 +29,7 @@ module.exports = {
             {
                 test: /.css$/,
 //                use: ['style-loader','css-loader']
-                use: [MiniCssExtract.loader, 'css-loader', "postcss-loader"]
+                use: [MiniCssExtract.loader, 'css-loader', "postcss-loader","px2rem-loader?remUnit=75&remPrecision=8"]
             },
             // 使用less
             {
@@ -40,8 +39,9 @@ module.exports = {
                 },{
                     loader: "less-loader" // compiles Less to CSS
                 },{
-                    loader: "postcss-loader", // translates CSS into CommonJS
-
+                    loader: "postcss-loader" // translates CSS into CommonJS
+                },{
+                    loader: "px2rem-loader?remUnit=75&remPrecision=8"
                 }]
             }
         ]
