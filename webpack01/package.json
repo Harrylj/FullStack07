@@ -20,8 +20,11 @@
     "webpack-dev-server": "^3.7.2"
   },
   "dependencies": {
+    "amfe-flexible": "^2.2.1",
     "autoprefixer": "^9.6.1",
     "mini-css-extract-plugin": "^0.7.0",
-    "postcss-loader": "^3.0.0"
+    "postcss-loader": "^3.0.0",
+    "postcss-px2rem": "^0.3.0",
+    "px2rem-loader": "^0.1.9"
   }
 }
