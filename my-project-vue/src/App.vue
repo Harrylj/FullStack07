@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <div class="lj">nijskdjskjdjdk</div>
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
@@ -15,8 +16,11 @@ export default {
   }
 }
 </script>
+<style lang="less" >
+  @import  './components/css/me.less';
+</style>
+<style lang="less" >
 
-<style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -25,4 +29,5 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
 </style>
